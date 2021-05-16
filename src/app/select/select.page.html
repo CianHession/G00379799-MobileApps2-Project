@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Province Selector</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-label>Please click a province to see the counties of that province!</ion-label>
+<ul>
+  <!--Navigation to Pages-->
+  <li [routerLink]="['/connacht']" routerDirection="forward">Connacht</li>
+  <li [routerLink]="['/leinster']" routerDirection="forward">Leinster</li>
+  <li [routerLink]="['/ulster']" routerDirection="forward">Ulster</li>
+  <li [routerLink]="['/munster']" routerDirection="forward">Munster</li>
+</ul>
+<br>
+<hr>
+<!--Plugin-->
+<ion-button (click)="Location()">Press To Recieve Your GeoLocation Longitude and Latitude!</ion-button>
+<br>
+Latitude: {{lat}}, Longitude: {{long}}
+</ion-content>
